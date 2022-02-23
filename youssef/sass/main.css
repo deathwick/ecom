@@ -1,0 +1,189 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+body {
+  text-align: right;
+}
+
+.navbar {
+  text-align: center;
+  background: white;
+}
+
+.navbar .navbar-brand {
+  color: #07313b;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: line-through;
+  -webkit-text-decoration-style: double;
+  text-decoration-style: double;
+}
+
+.navbar .navbar-nav li {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.navbar .navbar-nav .nav-item a.nav-link {
+  font-size: 1.2em;
+  color: black;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar .navbar-nav .nav-item a.nav-link:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.navbar .icon a:hover {
+  border-bottom: 2px solid black;
+  padding-bottom: 6px;
+}
+
+.image {
+  height: 80vh;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 400px;
+  height: 500px;
+  margin: auto;
+}
+
+p {
+  color: black;
+}
+
+.product {
+  max-width: 100vw;
+  margin: auto;
+  padding: 3em 2em 2em 0;
+}
+
+.product .info {
+  margin-right: 1em;
+}
+
+.product .info h1 {
+  color: #2d314d;
+}
+
+.product .info h1 .name {
+  font-size: 1.2em;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.product .info h1 .name-des {
+  font-size: 0.7em;
+}
+
+.product .info .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product .info .price .now {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  font-weight: bolder;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.product .info .price .past {
+  font-size: 14px;
+  text-decoration: line-through;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  opacity: 0.7;
+}
+
+.product .info .desc {
+  margin: 1em 0;
+}
+
+.product .info .pay .car-icon {
+  margin-right: 5px;
+}
+
+.product .info .pay .btn {
+  margin-top: 10px;
+  color: white;
+  border: 2px solid #31d35c;
+  border-radius: 30px;
+  background-color: #31d35c;
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .price {
+    text-align: center;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+body {
+  background-color: #fafafa;
+}
+/*# sourceMappingURL=main.css.map */

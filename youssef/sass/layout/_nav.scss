@@ -1,0 +1,49 @@
+.navbar {
+  text-align: center;
+  background: $nav-bg;
+  .navbar-brand {
+    color: $logo;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: line-through;
+    -webkit-text-decoration-style: double;
+    text-decoration-style: double;
+  }
+  .navbar-nav {
+    li {
+      justify-content: end;
+    }
+    .nav-item {
+      a {
+        &.nav-link {
+          font-size: 1.2em;
+          color: $nav-link;
+          border-bottom: 2px solid transparent;
+          &:hover {
+            color: $nav-hover;
+            border-bottom: 2px solid $nav-hover;
+          }
+        }
+      }
+    }
+  }
+
+  .icon a {
+    &:hover {
+      border-bottom: 2px solid black;
+      padding-bottom: 6px;
+    }
+  }
+}
+
+.image {
+  height: 80vh;
+}
+.carousel-item {
+  width: 100%;
+  height: 100%;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
