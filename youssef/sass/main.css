@@ -1,17 +1,16 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  justify-content: right;
 }
 
 body {
   text-align: right;
 }
-
+body {
+  background-color: #fafafa;
+}
 .navbar {
   text-align: center;
   background: white;
@@ -27,9 +26,7 @@ body {
 }
 
 .navbar .navbar-nav li {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
 }
 
 .navbar .navbar-nav .nav-item a.nav-link {
@@ -97,18 +94,12 @@ p {
 }
 
 .product .info .price {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .product .info .price .now {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  order: 2;
   font-weight: bolder;
   margin-left: 20px;
   font-size: 18px;
@@ -117,9 +108,7 @@ p {
 .product .info .price .past {
   font-size: 14px;
   text-decoration: line-through;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  order: 1;
   opacity: 0.7;
 }
 
@@ -144,46 +133,25 @@ p {
 
 @media (max-width: 768px) {
   .product {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
   }
   .order {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .price {
     text-align: center;
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 body {
   background-color: #fafafa;
 }
-/*# sourceMappingURL=main.css.map */
