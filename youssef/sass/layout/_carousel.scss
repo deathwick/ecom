@@ -1,7 +1,10 @@
-.carousel-item {
-  img {
-    width: 400px;
+.carousel {
+  width: 400px;
+  display: flex;
+  .image-carousel {
     height: 500px;
-    margin: auto;
   }
+}
+.owl-theme .owl-nav {
+  display: none;
 }

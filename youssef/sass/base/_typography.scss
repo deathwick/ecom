@@ -1,0 +1,28 @@
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style-type: none;
+}
+svg {
+  pointer-events: none;
+}
+p {
+  font-size: 20px;
+}
+.container {
+  width: 1320px;
+  margin: auto;
+  @include large {
+    width: 960px;
+    // background-color: darkblue;
+  }
+  @include medium {
+    width: 720px;
+    // background-color: rgb(206, 41, 143);
+  }
+  @include small {
+    width: 95%;
+    // background-color: rgb(41, 196, 74);
+  }
+}

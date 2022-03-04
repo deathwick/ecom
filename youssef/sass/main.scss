@@ -1,28 +1,16 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  justify-content: right;
-}
-body {
-  text-align: right;
-}
+@import "./utils/variables";
+@import "./utils/mixins";
 
-$body-bg: hsl(0, 0%, 98%);
-$logo: hsl(192, 79%, 13%);
-$nav-bg: white;
-$nav-link: black;
-$nav-hover: black;
-$title-color: hsl(233, 26%, 24%);
-$btn-color: white;
-$btn-bg: hsl(136, 65%, 51%);
-$btn-border: hsl(136, 65%, 51%);
-$par-color: black;
-$primary-green: hsl(136, 65%, 51%);
+@import "./base/base";
+@import "./base/typography";
 
+@import "./components/icon";
 @import "./layout/nav";
 @import "./layout/carousel";
 @import "./layout/desc";
-body {
-  background-color: $body-bg;
-}
+@import "./layout/footer";
+@import "./layout/product";
+@import "./components/button";
+@import "./components/price";
+@import "./layout/items";
+@import "./layout/aboutUs";

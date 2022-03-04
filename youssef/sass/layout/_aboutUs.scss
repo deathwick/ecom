@@ -1,0 +1,34 @@
+.aboutUs {
+  margin-top: 2em;
+  text-align: center;
+  h2 {
+    color: $h2-aboutUs;
+    margin-bottom: 1em;
+  }
+  .contacts {
+    margin-bottom: 20px;
+    .contact {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      margin-bottom: 15px;
+      justify-content: center;
+      &:hover {
+        opacity: 0.5;
+      }
+      .icon {
+        margin-left: 2em;
+        svg {
+          width: 1.5em;
+        }
+      }
+      .text {
+        a {
+          color: #0d162b;
+          font-weight: bold;
+          font-size: 1.4em;
+        }
+      }
+    }
+  }
+}

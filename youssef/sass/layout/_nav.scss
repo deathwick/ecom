@@ -1,49 +1,100 @@
-.navbar {
-  text-align: center;
+nav {
   background: $nav-bg;
-  .navbar-brand {
-    color: $logo;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-decoration: line-through;
-    -webkit-text-decoration-style: double;
-    text-decoration-style: double;
-  }
-  .navbar-nav {
-    li {
-      justify-content: end;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 2s ease;
+  .nav-bar {
+    display: flex;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    @include small {
+      flex-direction: column;
     }
-    .nav-item {
+
+    .nav-brand {
+      @include small {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      display: flex;
+      .menu {
+        &.hide {
+          display: none;
+          @include small {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+          }
+        }
+      }
       a {
-        &.nav-link {
-          font-size: 1.2em;
+        color: $nav-logo;
+        font-size: 1.5em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+      }
+    }
+    ul.nav-list {
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+      @include small {
+        &.hight {
+          height: 0;
+          overflow: hidden;
+        }
+        flex-direction: column;
+      }
+      .nav-item {
+        padding-left: 3em;
+        font-size: 22px;
+        @include small {
+          padding-left: 0;
+          padding-bottom: 10px;
+        }
+        a {
           color: $nav-link;
-          border-bottom: 2px solid transparent;
           &:hover {
-            color: $nav-hover;
-            border-bottom: 2px solid $nav-hover;
+            color: #4f90ec;
+          }
+        }
+      }
+    }
+    .icon {
+      display: flex;
+      align-items: center;
+      @include small {
+        &.hight {
+          height: 0;
+          overflow: hidden;
+        }
+        flex-direction: row;
+        margin: auto;
+      }
+      a {
+        margin-right: 10px;
+        path {
+          fill: $nav-icon;
+        }
+        svg {
+          width: 22px;
+        }
+        &:hover {
+          svg {
+            width: 25px;
+          }
+          path {
+            fill: #4f90ec;
           }
         }
       }
     }
   }
-
-  .icon a {
-    &:hover {
-      border-bottom: 2px solid black;
-      padding-bottom: 6px;
-    }
-  }
 }
 
-.image {
-  height: 80vh;
-}
-.carousel-item {
-  width: 100%;
-  height: 100%;
-}
-.img {
-  width: 100%;
-  height: 100%;
+svg {
+  width: 22px;
 }

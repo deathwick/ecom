@@ -1,0 +1,14 @@
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2em;
+  align-items: center;
+  @include small {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
