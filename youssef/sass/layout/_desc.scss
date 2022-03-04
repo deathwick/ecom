@@ -23,6 +23,7 @@
     }
     a {
       margin-top: 20px;
+      cursor: pointer;
       .btn.btn-phone {
         margin-top: 20px;
         font-size: 20px;
@@ -33,6 +34,7 @@
         border-radius: 30px;
         background: $btn-bg;
         padding: 10px 20px;
+        cursor: pointer;
       }
     }
   }
