@@ -25,6 +25,11 @@ p {
   font-size: 20px;
 }
 
+a,
+button {
+  cursor: pointer;
+}
+
 .container {
   width: 1320px;
   margin: auto;
@@ -259,6 +264,7 @@ svg {
 
 .description .pay a {
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .description .pay a .btn.btn-phone {
@@ -272,6 +278,7 @@ svg {
   background: -webkit-gradient(linear, right top, left top, from(#3e5c76), to(#1d2d44));
   background: linear-gradient(to left, #3e5c76, #1d2d44);
   padding: 10px 20px;
+  cursor: pointer;
 }
 
 footer {
